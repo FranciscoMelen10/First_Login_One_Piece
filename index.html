@@ -7,46 +7,47 @@
     <title>Primer Login</title>
     <link rel="stylesheet" href="style.css">
 
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&family=Poppins:wght@300&family=Rubik+Vinyl&display=swap');
+    </style>
+
 </head>
 <body>
-
         <div class="Contenedor_Principal">
+            <div class="login">
                 <h1 class="titulo" for="Login">Login</h1>
+                <a href="https://github.com/FranciscoMelen10" target="_blank"><img src="imagenes/Foto de perfil Github.png" alt="Perfil de Github" class="github"></a>
+            </div>
             <div class="formulario">
-                <form class="inputs">
+                <form>
                     <div class="email">
                         <ion-icon name="person-circle-outline"></ion-icon>
-                        <input type="text" placeholder="Email" class="input_email">
+                        <input id="inputs" type="text" maxlength="35" placeholder="Email" class="input_email">
                     </div>
-
                     <div class="password">
                         <ion-icon name="lock-closed"></ion-icon>
-                        <input type="password" placeholder="Password" class="input_password">
+                        <input id="inputs" type="password" minlength="9" maxlength="55" placeholder="Password" class="input_password">
                     </div>
                 </form>
             </div>
             <div class="boton_login">
-                <button>Registrarse</button>
+                <a href=""><button class="registrarse">Registrarse</button></a>
             </div>
             <div class="no_registrado">
                 <label>No tienes usuario?</label>
                 <a href="">Registrate</a>
             </div>
-            <div class="redes_sociales">
-                <ion-icon name="logo-facebook"></ion-icon>
-                <ion-icon name="logo-instagram"></ion-icon>
-                <ion-icon name="logo-twitter"></ion-icon>
-                <ion-icon name="logo-twitch"></ion-icon>
+            <div >
+                <a href="https://www.facebook.com/chicoyfrancisco.melendez/" target="_blank"><ion-icon name="logo-facebook" id="redes_sociales" class="facebook"></ion-icon></a>
+                <a href="https://www.instagram.com/coooooooooooyyyyyyy/" target="_blank"><ion-icon name="logo-instagram" id="redes_sociales" class="instagram"></ion-icon></a>
+                <a href="https://twitter.com/Francisco_Melnd" target="_blank"><ion-icon name="logo-twitter" id="redes_sociales" class="twitter"></ion-icon></a>
+                <a href="https://github.com/FranciscoMelen10" target="_blank"><ion-icon name="logo-github" id="redes_sociales" class="github"></ion-icon></a>
             </div>
         </div>
-
-
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-
 </body>
 
-
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </html>
